@@ -1,0 +1,36 @@
+# Node modules
+frontend/node_modules
+node_modules
+
+# Python
+backend/venv
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Build artifacts
+frontend/dist
+frontend/.vite
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
