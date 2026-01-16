@@ -8,13 +8,7 @@ app = FastAPI(title="Salary Optimizer API")
 # Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173", "http://localhost:5174", "http://localhost:5175", 
-        "http://localhost:5176", "http://localhost:5177", "http://localhost:5178",
-        "http://localhost:5179", "http://localhost:5180", "http://localhost:5181",
-        "http://localhost:5182", "http://localhost:5183", "http://localhost:5184",
-        "http://localhost:5185", "http://localhost:3000"
-    ],
+    allow_origins=["*"],  # Allow all origins for production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
