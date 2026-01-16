@@ -1,8 +1,8 @@
 import type { SalaryInputs, Investments, TaxResult } from '../utils/taxCalculator';
 
-// Backend is deployed on Render at the URL below
+// Backend is deployed on Vercel
 const API_URL = import.meta.env.PROD
-    ? 'https://salary-optimizer-api.onrender.com/api'
+    ? 'https://salary-optimizer-api.vercel.app/api'
     : 'http://localhost:8000/api';
 
 export interface ComparisonResponse {
